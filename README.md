@@ -36,7 +36,7 @@ class Employee:
 ```
 
 Inheritance: using the 'is a' relationship
-```
+```python
 from dataclass import Dataclass
 from abc import ABC, abstractmethod
 
