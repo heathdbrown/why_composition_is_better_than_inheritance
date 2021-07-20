@@ -17,7 +17,10 @@ Github: https://github.com/ArjanCodes/2021-composition-vs-inheritance
 
 Composition: using the 'has a' relationship
 ```python
-from dataclass import Dataclass
+from abc import ABC, abstractmethod
+from dataclasses import dataclass
+from typing import Optional
+
 
 @dataclass
 class Commission:
@@ -31,8 +34,8 @@ class Contract:
 class Employee:
    id: int
    name: str
-   commission: Commision
-   contracts: Contract
+   commission: Optional[Commision]
+   contracts: Optional[Contract]
 ```
 
 Inheritance: using the 'is a' relationship
