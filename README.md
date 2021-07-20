@@ -2,6 +2,7 @@
 > https://www.youtube.com/watch?v=0mcP8ZpUR38
 
 Github: https://github.com/ArjanCodes/2021-composition-vs-inheritance
+Python: https://docs.python.org/3/library/abc.html
 
 🔖 Chapters:
 - 0:00 Intro
