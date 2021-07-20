@@ -12,3 +12,45 @@ Github: https://github.com/ArjanCodes/2021-composition-vs-inheritance
 - 18:48 Improvement: turn Commission into an abstract class
 - 20:03 Limitations of this example
 - 21:29 Final thoughts
+
+# Composition vs Inheritance
+
+Composition: using the 'has a' relationship
+```python
+from dataclass import Dataclass
+
+@dataclass
+class Commission:
+  amount: int
+
+@dataclass
+class Contract:
+  id: int
+
+@dataclass
+class Employee:
+   id: int
+   name: str
+   commission: Commision
+   contracts: Contract
+```
+
+Inheritance: using the 'is a' relationship
+```
+from dataclass import Dataclass
+from abc import ABC, abstractmethod
+
+@dataclass
+class Employee(ABC):
+  id: int
+  name: str
+  commission: int
+  contract: int
+  
+@dataclass
+class SalariedEmployee(Employee):
+
+@dataclass
+class SalariedEmployeewithCommission(SalariedEmployee):
+
+```
