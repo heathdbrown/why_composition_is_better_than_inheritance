@@ -19,6 +19,8 @@ Python: https://docs.python.org/3/library/abc.html
 
 abstract base class https://docs.python.org/3/glossary.html#term-abstract-base-class
 
+https://docs.python.org/3/library/abc.html
+
 Abstract base classes complement duck-typing by providing a way to define interfaces when other techniques like hasattr() would be clumsy or subtly wrong (for example with magic methods). ABCs introduce virtual subclasses, which are classes that don’t inherit from a class but are still recognized by isinstance() and issubclass(); see the abc module documentation. Python comes with many built-in ABCs for data structures (in the collections.abc module), numbers (in the numbers module), streams (in the io module), import finders and loaders (in the importlib.abc module). You can create your own ABCs with the abc module.
 
 # Composition vs Inheritance
